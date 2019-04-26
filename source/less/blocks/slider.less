@@ -1,0 +1,137 @@
+.slider {
+  background: #FFFFFF;
+  box-shadow: 0 4px 20px rgba(17, 38, 74, 0.2);
+  width: 100%;
+}
+
+.slider__block {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider__img {
+  max-width: 791px;
+  height: auto;
+  background: #11264A;
+  margin: 0;
+}
+
+.slider__info h2 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  color: #C69642;
+}
+
+.slider__info h2 span {
+  font-size: 30px;
+}
+
+.slider__info h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #11264A;
+}
+
+.slider__info p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #11264A;
+  margin: 0;
+}
+
+.slider__info p span {
+  font-weight: bold;
+}
+
+.slider__number {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: normal;
+  color: rgba(17, 38, 74, 0.5);
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  text-align: right;
+}
+
+.slider__number span {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: normal;
+  color: #E8C48A;
+  text-shadow: 0 2px 6px rgba(251, 217, 164, 0.3);
+}
+
+.slider__item {
+  display: flex;
+}
+
+.slider__info {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 60px;
+}
+
+.slider__numbers {
+  position: absolute;
+  bottom: 40px;
+  right: 33px;
+}
+
+@media (min-width: @size-tablet) {
+  .slider__info {
+    width: 404px;
+  }
+
+.slider__info h2 {
+  font-size: 25px;
+  line-height: 35px;
+}
+
+.slider__info h2 span {
+  font-size: 45px;
+}
+
+.slider__info h3 {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.slider__info p {
+  font-size: 15px;
+  line-height: 21px;
+}
+}
+
+@media (min-width: @size-desktop) {
+  .slider__info {
+    margin-right: 125px;
+  }
+}
+
+@media (min-width: 1556px) {
+  .slider__block {
+    align-items: flex-start;
+  }
+
+  .slider__item {
+    width: 1350px;
+  }
+
+  .slider__info {
+    margin-left: 53px;
+    margin-right: 125px;
+  }
+}

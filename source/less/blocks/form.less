@@ -1,0 +1,261 @@
+.form__bg {
+  background-image: url("../img/bg.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(17, 38, 74, 0.6);
+  min-height: 583px;
+}
+
+.form {
+  position: relative;
+  box-sizing: border-box;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 583px;
+}
+
+.form__item1,
+.form__item3,
+.form__item4,
+.form__popap {
+  display: none;
+}
+.form__item2 {
+  display: flex;
+}
+.form__item {
+  padding: 0 20px;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__button {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #11264A;
+  width: 180px;
+  height: 40px;
+  background: linear-gradient(90deg, #D7B57E 0%, #FAD08C 100%);
+  border-radius: 5px;
+  border: 2px solid #E8C48A;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.form__button::before {
+  content: "";
+  display: flex;
+  width: 55px;
+height: 45px;
+  background: url("../img/arrow.svg") no-repeat;
+  position: absolute;
+  top: -15px;
+  left:  -65px;
+}
+
+.form__item label {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 21px;
+  color: #11264A;
+  margin-bottom: 20px;
+}
+
+.form__item input::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 21px;
+  color: rgba(17, 38, 74, 0.6);
+  padding: 16px;
+}
+
+.form__item input,
+.form__item select,
+.form__item select option {
+  width: 300px;
+  height: 50px;
+  border-radius: 5px;
+  background: #FFFFFF;
+  border: 2px solid #E8C48A;
+  margin-bottom: 25px;
+}
+
+
+
+.form__info {
+  background: linear-gradient(180deg, #173363 0%, #11264A 100%), #11264A;
+  padding: 0 20px;
+}
+
+.form__info h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 49px;
+  color: #FFFFFF;
+}
+
+.form__info p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.form__element {
+  display: flex;
+  flex-direction: column;
+  max-width: 1148px;
+  background-color: #ffffff;
+}
+
+.form__line {
+  position: relative;
+}
+
+.form__line::after {
+  content: "";
+  display: block;
+  width: 300px;
+  height: 7px;
+  background: #F6F6F6;
+  border-radius: 5px;
+}
+
+.form__line::before {
+  content: "";
+  display: block;
+  width: 75px;
+  height: 7px;
+  background: #E8C48A;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 1;
+}
+
+.form__id {
+  margin: 25px 0;
+  position: relative;
+}
+@media (min-width: @size-tablet) {
+  .form__line::after {
+    width: 383px;
+  }
+
+  .form__line::before {
+    width: 96px;
+  }
+
+  .form__item input,
+  .form__item select,
+  .form__item select option {
+    width: 344px;
+  }
+
+  .form__item {
+    max-width: 741px;
+  }
+
+  .form__element {
+    flex-direction: row;
+    background-color: #ffffff;
+  }
+
+  .form__info {
+    max-width: 407px;
+  }
+
+  .form__info h2,
+  .form__info p{
+    margin-left: 49px;
+    margin-right: 49px;
+}
+}
+@media (min-width: @size-desktop) {
+  .form__item {
+    width: 741px;
+    padding: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .form__item label::after {
+    content: "Заполните поле слева";
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    width: 231px;
+    height: 50px;
+    background: #11264A;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    right: 60px;
+    top: 208px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 9px 25px rgba(10, 27, 57, 0.4);
+  }
+
+  .form__item label::before {
+    content: "";
+    width: 13px;
+    height: 13px;
+    background: #11264A;
+    border: none;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 281px;
+    top: 225px;
+  }
+
+  .form__id,
+  .form__item label,
+  .form__item input,
+  .form__item select,
+  .form__item select option {
+    margin-left: 71px;
+  }
+
+  .form__id {
+    margin-top: 64px;
+    margin-bottom: 65px;
+  }
+
+  .form__item input,
+  .form__item select,
+  .form__item select option {
+    margin-bottom: 56px;
+  }
+
+  .form__button {
+    margin-left: 526px;
+    margin-right: 35px;
+    margin-bottom: 49px;
+  }
+
+  .form__info {
+    padding: 0;
+  }
+}

@@ -1,0 +1,74 @@
+.gain {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.gain h2 {
+font-family: "Playfair Display";
+font-style: normal;
+font-weight: bold;
+font-size: 25px;
+line-height: 35px;
+color: #11264A;
+margin: 0 20px;
+margin-top: 35px;
+margin-bottom: 30px;
+}
+
+.gain__lists {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.gain__list {
+  width: 295px;
+}
+
+.gain__list h3 {
+font-family: "Roboto";
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+color: #C69642;
+margin: 0 10px;
+}
+
+.gain__list p {
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 21px;
+color: #11264A;
+margin: 0 10px;
+}
+
+@media (min-width: @size-tablet) {
+  .gain__lists {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @size-desktop) {
+  .gain {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .gain__lists {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 1370px;
+    margin-bottom: 110px;
+  }
+}
